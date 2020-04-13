@@ -184,3 +184,30 @@ for (let num = 0; num <= 10; num++ ) {
     emptyArray.push(num);
 }
 console.log(emptyArray);
+
+
+
+// *** 8) Object in JS ***
+// dictionary in Python
+
+let student = { 
+    first: 'Zu Rong', 
+    last: 'Hun', 
+    age: 19, 
+    height: 170,
+    studentInfo: function() {
+        return this.first + '\t' + this.last + '\n' + this.age;
+    }
+};
+console.log(student.first);
+console.log(student["first"]);
+console.log(student.last);
+student.first = 'not Zu Rong';  // change value
+console.log(student.first);
+    // similar
+student.first = 'yes Zu Rong';  // change value
+console.log(student.first); 
+student.age++;
+console.log(student.age);
+
+console.log(student.studentInfo());
